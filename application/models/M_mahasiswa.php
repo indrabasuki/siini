@@ -18,6 +18,11 @@ class M_mahasiswa extends CI_Model
         $dosen = $this->db->get($this->table)->row_array();
         return $dosen;
     }
+    public function data()
+    {
+        $query = "SELECT * FROM $this->table ORDER BY nim ASC";
+        return $this->db->query($query)->result();
+    }
 }
 
 /* End of file: M_mahasiswa.php */

@@ -18,6 +18,11 @@ class M_dosen extends CI_Model
         $dosen = $this->db->get($this->table)->row_array();
         return $dosen;
     }
+    public function data()
+    {
+        $query = "SELECT * FROM $this->table ORDER BY nid ASC";
+        return $this->db->query($query)->result();
+    }
 }
 
 /* End of file: M_dosen.php */

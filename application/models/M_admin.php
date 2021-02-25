@@ -18,6 +18,12 @@ class M_admin extends CI_Model
         $admin = $this->db->get($this->table)->row_array();
         return $admin;
     }
+
+    public function data()
+    {
+        $query = "SELECT * FROM$this->table ORDER BY username ASC";
+        return $this->db->query($query)->result();
+    }
 }
 
 /* End of file: M_admin.php */
