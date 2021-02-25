@@ -7,6 +7,7 @@
     <title><?= $title ?></title>
 
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="shortcut icon" href="<?= base_URL() ?>public/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="<?= base_URL() ?>public/plugins/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?= base_URL() ?>public/plugins/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="<?= base_URL() ?>public/plugins/Ionicons/css/ionicons.min.css">
