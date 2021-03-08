@@ -196,12 +196,12 @@
              document.getElementById('gr').value = "C+";
          } else if (document.getElementById('nil').value >= 75 && document.getElementById('nil').value <= 79) {
              document.getElementById('gr').value = "B";
-             else if (document.getElementById('nil').value >= 80 && document.getElementById('nil').value <= 89) {
-                 document.getElementById('gr').value = "B+";
-             } else if (document.getElementById('nil').value >= 90 && document.getElementById('nil').value <= 100) {
-                 document.getElementById('gr').value = "A";
-             } else {
-                 document.getElementById('gr').value = null;
-             }
+         } else if (document.getElementById('nil').value >= 80 && document.getElementById('nil').value <= 89) {
+             document.getElementById('gr').value = "B+";
+         } else if (document.getElementById('nil').value >= 90 && document.getElementById('nil').value <= 100) {
+             document.getElementById('gr').value = "A";
+         } else {
+             document.getElementById('gr').value = null;
          }
+     }
  </script>

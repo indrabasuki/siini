@@ -44,11 +44,11 @@
                         <?php $no = 1;
                         foreach ($dsn as $d) : ?>
                             <?php $foto = 'default.jpg';
-                            if ($d->foto && file_exists('assets/img/' . $d->foto)) {
+                            if ($d->foto && file_exists('public/img/' . $d->foto)) {
                                 $foto = $d->foto;
                             } ?><tr>
                                 <td align="center"><?= $no ?>.</td>
-                                <td align="center"><img src="<?= base_URL() . 'assets/img/' . $foto ?>" class="img-circle" alt="foto profil" style="height: 40px; width: 40px" /></td>
+                                <td align="center"><img src="<?= base_URL() . 'public/img/' . $foto ?>" class="img-circle" alt="foto profil" style="height: 40px; width: 40px" /></td>
                                 <td align="center"><?= $d->nid ?></td>
                                 <td><?= $d->nama_dosen ?></td>
                                 <td align="center"><a href="<?= base_URL() ?>admin/dosen_edit/<?= $d->nid ?>" class="btn btn-xs btn-warning btn-flat" title="Edit Data"><i class="fa fa-edit"></i></a><a href="<?= base_URL() ?>admin/dosen_hapus/<?= $d->nid ?>" onclick="return confirm('Kamu yakin ingin menghapus data ini ?')" class="btn btn-xs btn-danger btn-flat" title="Hapus Data"><i class="fa fa-trash"></i></a></td>

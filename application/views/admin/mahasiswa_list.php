@@ -28,6 +28,9 @@
                                 <center>NO</center>
                             </th>
                             <th>
+                                <center>FOTO</center>
+                            </th>
+                            <th>
                                 <center>NIM</center>
                             </th>
                             <th>NAMA</th>
@@ -48,7 +51,12 @@
                     <tbody>
                         <?php $no = 1;
                         foreach ($mhs as $m) : ?><tr>
+                                <?php $foto = 'default.jpg';
+                                if ($m->foto && file_exists('public/img/' . $m->foto)) {
+                                    $foto = $m->foto;
+                                } ?>
                                 <td align="center"><?= $no++ ?>.</td>
+                                <td align="center"><img src="<?= base_URL() . 'public/img/' . $foto ?>" alt="foto profil" style="height: 50px; width: 50px" /></td>
                                 <td align="center"><?= $m->nim ?></td>
                                 <td><?= $m->nama_mhs ?></td>
                                 <td align="center"><?= $m->jk_mhs ?></td>

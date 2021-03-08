@@ -21,7 +21,7 @@ class M_admin extends CI_Model
 
     public function data()
     {
-        $query = "SELECT * FROM$this->table ORDER BY username ASC";
+        $query = "SELECT * FROM $this->table ORDER BY username ASC";
         return $this->db->query($query)->result();
     }
     public function simpan($foto)

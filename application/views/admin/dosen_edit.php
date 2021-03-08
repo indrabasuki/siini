@@ -37,12 +37,12 @@
                                  </div>
                              </div>
                          </div><?php $foto = 'default.jpg';
-                                if ($dsn['foto'] && file_exists('assets/img/' . $dsn['foto'])) {
+                                if ($dsn['foto'] && file_exists('public/img/' . $dsn['foto'])) {
                                     $foto = $dsn['foto'];
                                 } ?><div class="col-md-6">
                              <div class="box-body">
                                  <div class="form-group"><label>Foto Profil</label>
-                                     <div class="fileupload-new thumbnail" class="img-responsive" style="width: 100px; height: 100px;"><img src="<?= base_URL() . 'assets/img/' . $foto ?>" alt="foto profil" style="height: 90px;" /></div>
+                                     <div class="fileupload-new thumbnail" class="img-responsive" style="width: 100px; height: 100px;"><img src="<?= base_URL() . 'public/img/' . $foto ?>" alt="foto profil" style="height: 90px;" /></div>
                                  </div>
                              </div>
                          </div>
