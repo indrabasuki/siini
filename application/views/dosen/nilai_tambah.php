@@ -88,26 +88,27 @@
  <div class="modal fade" id="nimModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
      <div class="modal-dialog">
          <div class="modal-content">
-             <divclass="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+             <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                  <h4 align="center" class="modal-title" id="myModalLabel">PILIH MAHASISWA</h4>
-         </div>
-         <div class="modal-body">
-             <table id="lookup" class="table table-hover table-striped table-bordered">
-                 <thead>
-                     <tr>
-                         <th style="text-align: center; ">NIM</th>
-                         <th>NAMA MAHASISWA</th>
-                     </tr>
-                 </thead>
-                 <tbody><?php foreach ($mhs as $m) { ?><tr class="pilih" data-nim="<?= $m->nim ?>" data-nama_mhs="<?= $m->nama_mhs ?>" data-thn_akademik="<?= $m->thn_akademik ?>" data-jurusan_mhs="<?= $m->jurusan_mhs ?>">
-                             <td align="center"><?= $m->nim ?></td>
-                             <td><?= $m->nama_mhs ?></td>
-                         </tr><?php } ?></tbody>
-             </table>
+             </div>
+             <div class="modal-body">
+                 <table id="lookup" class="table table-hover table-striped table-bordered">
+                     <thead>
+                         <tr>
+                             <th style="text-align: center; ">NIM</th>
+                             <th>NAMA MAHASISWA</th>
+                         </tr>
+                     </thead>
+                     <tbody><?php foreach ($mhs as $m) { ?><tr class="pilih" data-nim="<?= $m->nim ?>" data-nama_mhs="<?= $m->nama_mhs ?>" data-thn_akademik="<?= $m->thn_akademik ?>" data-jurusan_mhs="<?= $m->jurusan_mhs ?>">
+                                 <td align="center"><?= $m->nim ?></td>
+                                 <td><?= $m->nama_mhs ?></td>
+                             </tr><?php } ?></tbody>
+                 </table>
+             </div>
          </div>
      </div>
  </div>
- </div>
+
  <!--Modal MATA KULIAH -->
  <div class="modal fade" id="mkModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
      <div class="modal-dialog">
@@ -132,8 +133,8 @@
          </div>
      </div>
  </div>
- <script src="<?= base_URL() ?>assets/modal/js/jquery-1.11.2.min.js"></script>
- <script src="<?= base_URL() ?>assets/modal/datatables/jquery.dataTables.js"></script>
+ <script src="<?= base_URL() ?>public/modal/js/jquery-1.11.2.min.js"></script>
+ <script src="<?= base_URL() ?>public/modal/datatables/jquery.dataTables.js"></script>
  <!--JS NIM -->
  <script type="text/javascript">
      $(document).on('click', '.pilih', function(e) {

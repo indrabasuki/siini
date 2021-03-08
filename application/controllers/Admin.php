@@ -224,8 +224,7 @@ class Admin extends CI_Controller
     public function matkul()
     {
         $data = array(
-            '
-        title' => 'Data Mata Kuliah | Panel Admin SIINI',
+            'title' => 'Data Mata Kuliah | Panel Admin SIINI',
             'mtk'   => $this->m_matkul->data()
         );
         $this->load->view('admin/header', $data);
@@ -293,6 +292,7 @@ class Admin extends CI_Controller
         $this->load->view('admin/nilai_list');
         $this->load->view('admin/footer');
     }
+
     public function nilai_tambah()
     {
         if (isset($_POST['submit'])) {
@@ -300,7 +300,11 @@ class Admin extends CI_Controller
             $this->session->set_flashdata('simpan', 'Nilai Mahasiswa baru berhasil tersimpan ...');
             redirect('admin/nilai');
         } else {
-            $data = array('title' => 'Transkasi Nilai | Panel Admin SIINI', 'mhs'   => $this->m_mahasiswa->data(), 'mtk'   => $this->m_matkul->data());
+            $data = array(
+                'title' => 'Transkasi Nilai | Panel Admin SIINI',
+                'mhs' => $this->m_mahasiswa->data(),
+                'mtk' => $this->m_matkul->data()
+            );
             $this->load->view('admin/header', $data);
             $this->load->view('admin/nilai_tambah');
             $this->load->view('admin/footer');

@@ -65,7 +65,9 @@
                 <!--Sidebar user panel -->
                 <div class="user-panel">
                     <div class="pull-left image"><img src="<?= base_URL() . 'public/img/' . $foto ?>" class="img-circle" alt="Foto Profil"></div>
-                    <div class="pull-left info">48| P a g eGambar 7.14-header.php di folder mahasiswa<p><?= $usr['nama_mhs'] ?></p><a href="javascript:void(0)"><i class="fa fa-circle text-success"></i> Online</a></div>
+                    <div class="pull-left info">
+                        <p><?= $usr['nama_mhs'] ?></p><a href="javascript:void(0)"><i class="fa fa-circle text-success"></i> Online</a>
+                    </div>
                 </div>
                 <!--sidebar menu: : style can be found in sidebar.less -->
                 <ul class="sidebar-menu" data-widget="tree">

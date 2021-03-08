@@ -3,13 +3,13 @@
 </footer>
 </div>
 
-<script src="<?= base_URL() ?>assets/plugins/jquery/dist/jquery.min.js"></script>
-<script src="<?= base_URL() ?>assets/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="<?= base_URL() ?>assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
-<script src="<?= base_URL() ?>assets/plugins/fastclick/lib/fastclick.js"></script>
-<script src="<?= base_URL() ?>assets/js/adminlte.min.js"></script>
-<script src="<?= base_URL() ?>assets/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
-<script src="<?= base_URL() ?>assets/plugins/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<script src="<?= base_URL() ?>public/plugins/jquery/dist/jquery.min.js"></script>
+<script src="<?= base_URL() ?>public/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="<?= base_URL() ?>public/plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<script src="<?= base_URL() ?>public/plugins/fastclick/lib/fastclick.js"></script>
+<script src="<?= base_URL() ?>public/js/adminlte.min.js"></script>
+<script src="<?= base_URL() ?>public/plugins/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="<?= base_URL() ?>public/plugins/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
 <script>
     $(function() {
         $('#example1').DataTable();
@@ -23,8 +23,8 @@
         })
     })
 </script>
-<script src="<?= base_URL() ?>assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
-<script src="<?= base_URL() ?>assets/plugins/iCheck/icheck.min.js"></script>
+<script src="<?= base_URL() ?>public/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+<script src="<?= base_URL() ?>public/plugins/iCheck/icheck.min.js"></script>
 <script>
     $(function() {
         Datepicker.$('#datepicker').datepicker({

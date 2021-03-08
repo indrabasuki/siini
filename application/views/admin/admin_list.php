@@ -41,11 +41,11 @@
                      <tbody>
                          <?php $no = 1;
                             foreach ($adm as $a) : ?><?php $foto = 'default.jpg';
-                                                    if ($a->foto && file_exists('assets/img/' . $a->foto)) {
-                                                        $foto = $a->foto;
-                                                    } ?><tr>
+                                                        if ($a->foto && file_exists('public/img/' . $a->foto)) {
+                                                            $foto = $a->foto;
+                                                        } ?><tr>
                              <td align="center"><?= $no ?>.</td>
-                             <td align="center"><img src="<?= base_URL() . 'assets/img/' . $foto ?>" class="img-circle" alt="foto profil" style="height: 40px; width: 40px" /></td>
+                             <td align="center"><img src="<?= base_URL() . 'public/img/' . $foto ?>" class="img-circle" alt="foto profil" style="height: 40px; width: 40px" /></td>
                              <td align="center"><?= $a->username ?></td>
                              <td><?= $a->nama_admin ?></td>
                              <td align="center"><?php if ($a->username == $this->session->userdata('username')) { ?><span class="label label-primary">Ini User Kamu</span><?php } else { ?><a href="<?= base_URL() ?>admin/user_edit/<?= $a->username ?>" class="btn btn-xs btn-warning btn-flat" title="Edit Data"><i class="fa fa-edit"></i></a><a href="<?= base_URL() ?>admin/user_hapus/<?= $a->username ?>" onclick="return confirm('Kamu yakin ingin menghapus data ini ?')" class="btn btn-xs btn-danger btn-flat" title="Hapus Data"><i class="fa fa-trash"></i></a><?php } ?></td>
